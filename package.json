@@ -10,7 +10,8 @@
     "changelist": "github-changes -o apiaryio -r dredd --only-pulls --use-commit-body --file CHANGELOG-Generated.md -a",
     "pretest": "coffeelint ./src",
     "test": "scripts/test",
-    "prepublish": "scripts/prepublish"
+    "prepublish": "scripts/prepublish",
+    "postinstall": "scripts/prepublish"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
     "chai": "^2.1.0",
     "clone": "^1.0.0",
     "coffee-script": "^1.9.1",
-    "drafter": "~0.2.5",
+    "drafter": "dy-dx/drafter.js#fix-node-5",
     "file": "~0.2.2",
     "gavel": "0.5.2",
     "glob": "^5.0.3",
